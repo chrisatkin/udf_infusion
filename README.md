@@ -8,22 +8,14 @@ The MySQL Infusion UDF is a functionality enhancement for MySQL. It provides a v
 
 Installation
 ------------
-In order to install the UDF, you need the MySQL header files installed on your machine. Additionally, you need GNU AWK (gawk). There is a very stupid Makefile with hard-coded paths, open the Makefile and adjust the things that are different to you. After that, all you need to do is:
+In order to install the UDF, you will need MySQL installed via Homebrew (either bottled or compiled from source) with the headers. The headers *should* be included by default with either version. **Make sure the version of MySQL and the version in `Makefile` align.** Then run:
+
 ```
-git clone https://github.com/infusion/udf_infusion.git
+git clone https://github.com/chrisatkin/udf_infusion.git
 cd udf_infusion
 make
 ```
-
 If anything went okay, you can now use all of the following functions.
-
-
-
-
-
-
-
-
 
 Aggregate Functions
 -------------------
