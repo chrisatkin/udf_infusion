@@ -6,5 +6,5 @@ all:
 
 
 uninstall:
-	gawk -f db.awk -v drop=1 < udf_infusion.c | /usr/local/Cellar/mysql/5.6.17/bin/mysql -f --user=root --password=
+	gawk -f db.awk -v drop=1 < udf_infusion.c | /usr/local/Cellar/mysql/5.6.17_1/bin/mysql -f --user=root --password=
 	rm -f /usr/local/Cellar//mysql/5.6.17_1/lib/plugin/udf_infusion.so
